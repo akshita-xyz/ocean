@@ -71,6 +71,7 @@ body {
 }
 
 .login-form .form-group {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -106,7 +107,8 @@ body {
 }
 
 .btn-sign-in {
-  width: 326px;
+  box-sizing: border-box;
+  width: 100%;
   height: 60px;
   background: #E3000F;
   border-radius: 6px;
