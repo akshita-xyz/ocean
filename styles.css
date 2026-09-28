@@ -1,0 +1,264 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #F0F4F9;
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login h1 {
+  font-weight: 900;
+  font-size: 138px;
+  line-height: 167px;
+  text-align: center;
+  color: #E3000F;
+  margin: 0;
+}
+
+.login h2 {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+}
+
+.campus {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  margin: 0 0 61px;
+  line-height: 1.2;
+}
+
+.login-form {
+  width: 330px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form .input-box {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.login-form .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 60px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  padding: 0 15px;
+  margin-bottom: 0;
+}
+
+.login-form .form-group img {
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.login-form .form-group input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9CA3AF;
+  width: 100%;
+  font-family: inherit;
+}
+
+.login-form .form-group input::placeholder {
+  color: #9CA3AF;
+  opacity: 1;
+}
+
+.btn-sign-in {
+  width: 326px;
+  height: 60px;
+  background: #E3000F;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #E3000F;
+  cursor: pointer;
+  margin: 0 0 18px;
+  padding: 0;
+  font-family: inherit;
+}
+
+.forgot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 326px;
+  color: #000000;
+  margin: 0 0 22px;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.forgot p {
+  font-size: 11px;
+  cursor: pointer;
+  color: #000000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: normal;
+}
+
+.email-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 326px;
+  margin-bottom: 18px;
+}
+
+.email-text.support {
+  gap: 5px;
+}
+
+.email-text.support p,
+.email-text.support a {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 26px;
+}
+
+.email-text.support p {
+  color: #6B7280;
+  margin: 0;
+}
+
+.email-text.support a {
+  color: #1565d8;
+  text-decoration: none;
+  padding-left: 0;
+}
+
+.email-text.copyright-line p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  color: #6B7280;
+  margin: 0;
+}
+
+.desktop-copy-right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 49px;
+  flex-shrink: 0;
+}
+
+ul.showSchoolList {
+  margin: 10px 0 0;
+  padding: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.showSchoolList li {
+  margin: 3px 0;
+  list-style: none;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 13px;
+  border-left: 1px solid #ccc;
+  display: inline;
+}
+
+.showSchoolList li:first-child {
+  border-left: 0;
+}
+
+.showSchoolList li a {
+  color: #1565d8;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 26px;
+}
+
+.showSchoolList li a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 743px) {
+  .showSchoolList li {
+    font-size: 10px;
+    display: inline-block;
+    width: 18%;
+    vertical-align: top;
+  }
+
+  .showSchoolList li a {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .login-form {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .login-form .form-group {
+    width: 100%;
+  }
+
+  .btn-sign-in,
+  .forgot,
+  .email-text {
+    width: 100%;
+  }
+
+  .email-text.support {
+    flex-direction: column;
+  }
+}

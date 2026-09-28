@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="icon" type="image/x-icon" href="https://ubus.chitkara.edu.in/student/images/fevicon.svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>UBus Management</title>
+  <script src="https://www.google.com/recaptcha/api.js?render=6Lcjx7whAAAAADQ2hrIzNjtCah6kdprFgJVYAKxH"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="login">
+      <h1>U</h1>
+      <h2>BUS</h2>
+      <div class="campus" style="font-size: 16px; font-weight: bold;">PUNJAB CAMPUS</div>
+
+      <form action="#" name="userregistration" id="userregistration" autocomplete="off" method="post">
+        <input type="hidden" readonly name="token_response" id="token_response" />
+
+        <div class="login-form">
+          <div class="input-box">
+            <div class="form-group">
+              <img src="images/user-icon.svg" alt="Icon" />
+              <input type="text" autocomplete="off" id="username" placeholder="Username" maxlength="50" />
+            </div>
+          </div>
+
+          <div class="input-box">
+            <div class="form-group">
+              <img src="images/lock-icon.svg" alt="Icon" />
+              <input autocomplete="off" type="password" id="password" placeholder="Password" maxlength="20" />
+            </div>
+          </div>
+
+          <input
+            type="submit"
+            name="insert"
+            value="Sign In"
+            class="form-button btn-sign-in" disabled
+          />
+
+          <p id="login-status" role="status" aria-live="polite" hidden style="font-size: 12px; margin: 0 0 18px; text-align: center;"></p>
+          <div class="forgot">
+            <p onclick="void(0)">Forgot your password? Click here</p>
+          </div>
+
+          <div class="email-text support">
+            <p>Questions? Email us at </p>
+            <a href="mailto:ubus@chitkara.edu.in" target="_blank" rel="noopener noreferrer">ubus@chitkara.edu.in</a>
+          </div>
+
+          <div class="email-text copyright-line">
+            <p>Copyright ©2026 Chitkara University  </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <section class="desktop-copy-right">
+    <ul class="showSchoolList">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Terms &amp; Conditions</a></li>
+      <li><a href="#">Refund &amp; Cancellation</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+  </section>
+
+  <script src="login.js"></script>
+  <script>
+    grecaptcha.ready(function () {
+      grecaptcha
+        .execute('6Lcjx7whAAAAADQ2hrIzNjtCah6kdprFgJVYAKxH', { action: 'submit' })
+        .then(function (token) {
+          document.getElementById('token_response').value = token;
+        });
+    });
+  </script>
+</body>
+</html>
